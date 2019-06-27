@@ -119,18 +119,18 @@ export default {
       name: 'Upcomming',
       url: '/buttons',
      // icon: 'icon-cursor',
-      /*children: [
-        {
-          name: 'Buttons',
-          url: '/buttons/buttons',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Button dropdowns',
-          url: '/buttons/button-dropdowns',
-          icon: 'icon-cursor',
-        },
-        {
+      // children: [
+      //   {
+      //     name: 'Buttons',
+      //     url: '/buttons/buttons',
+      //     icon: 'icon-cursor',
+      //   },
+        // {
+        //   name: 'Calender',
+        //   url: '/buttons/Calender',
+        //   //icon: 'icon-cursor',
+        // },
+       /* {
           name: 'Button groups',
           url: '/buttons/button-groups',
           icon: 'icon-cursor',
@@ -139,8 +139,8 @@ export default {
           name: 'Brand Buttons',
           url: '/buttons/brand-buttons',
           icon: 'icon-cursor',
-        },
-      ],*/
+        },*/
+      // ],
     },
     {
       name: 'cancelled',
@@ -201,6 +201,7 @@ export default {
       url: '/theme/colors',
      // icon: 'icon-drop',
     },
+    
   
    
   ],

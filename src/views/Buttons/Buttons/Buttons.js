@@ -1,37 +1,39 @@
 import React, { Component } from 'react';
-import { Button, Card, CardBody, CardHeader, Col, Row, Breadcrumb, BreadcrumbItem} from 'reactstrap';
-import { Link } from 'react-router-dom';
-
-
+import { Button, Card, CardBody, CardHeader, Col, Row} from 'reactstrap';
+//import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import Calendar from 'react-calendar';
+ 
 
 class Buttons extends Component {
    
+  constructor() {
+    super();
+    this.state = {
+      input: false
+    };
+  }
+  onChange=()=>
+  {
+    this.setState({input:true})
+  };
 
   render() {
+    if({input:false})
     return (
-      
-      <div className="animated fadeIn" style={{width:300,left:200}}>
-       <div style={{width:800,left:200}}>      
-      <Breadcrumb >
-        <BreadcrumbItem active>Grid view</BreadcrumbItem>
-        <Link to="/Calender">
-        <BreadcrumbItem>Calender</BreadcrumbItem>
-         </Link>
-         </Breadcrumb>
-        
-        </div>
+        <div className="animated fadeIn" style={{width:300,left:200}}>
+            <div style={{width:800,left:200}}>
+              <Button onClick={this.onChange}> on click!!</Button>
+          </div>
         <Card>
           <CardHeader>
             <strong>Card</strong>
           </CardHeader>
           <CardBody>
             <Row className="align-items-center">
-
               <Col col="12" xl className="pa0">
                 Date
-             </Col>
-            
-           </Row>
+              </Col>
+            </Row>
             <Row className="align-items-center mt-3">
               <Col col="12" xl className="pa0">
                 Profile
@@ -51,12 +53,10 @@ class Buttons extends Component {
           </CardHeader>
           <CardBody>
             <Row className="align-items-center">
-
-              <Col col="12" xl>
+             <Col col="12" xl>
                 Date
              </Col>
-            
-           </Row>
+             </Row>
             <Row className="align-items-center mt-3">
               <Col col="12" xl >
                 Profile
@@ -68,6 +68,7 @@ class Buttons extends Component {
               </Col>
            </Row>
         </CardBody>
+
         </Card>
          <Card>
           <CardHeader>
@@ -95,6 +96,13 @@ class Buttons extends Component {
         </Card>
         </div>
     );
+  else{
+    return(
+      <div>
+      <Calendar/>
+      </div>
+      );
+  }
   }
 }
 

@@ -21,6 +21,7 @@ import React from 'react';
 //const ButtonDropdowns = React.lazy(() => import('./views/Buttons/ButtonDropdowns'));
 //const ButtonGroups = React.lazy(() => import('./views/Buttons/ButtonGroups'));
 const Buttons = React.lazy(() => import('./views/Buttons/Buttons'));
+//const Calender = React.lazy(() => import('./views/Buttons/Calender'));
 const Charts = React.lazy(() => import('./views/Charts'));
 const Dashboard = React.lazy(() => import('./views/Dashboard'));
 const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
@@ -63,6 +64,8 @@ const routes = [
   // { path: '/base/tooltips', name: 'Tooltips', component: Tooltips },
   { path: '/buttons', exact: true, name: 'Buttons', component: Buttons },
   { path: '/buttons/buttons', name: 'Buttons', component: Buttons },
+  //{ path: '/buttons/Calender', name: 'Calender', component: Calender },
+
   //{ path: '/buttons/button-dropdowns', name: 'Button Dropdowns', component: ButtonDropdowns },
   //{ path: '/buttons/button-groups', name: 'Button Groups', component: ButtonGroups },
   //{ path: '/buttons/brand-buttons', name: 'Brand Buttons', component: BrandButtons },
