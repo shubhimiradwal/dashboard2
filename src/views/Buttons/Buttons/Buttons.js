@@ -9,20 +9,22 @@ class Buttons extends Component {
   constructor() {
     super();
     this.state = {
-      input: false
+      input: true,
     };
   }
-  onChange=()=>
+  Calenderdpy=()=>
   {
-    this.setState({input:true})
-  };
+    this.setState({input:false})
+    };
 
-  render() {
-    if({input:false})
+  render() 
+  {
+    if(this.state.input)
+    {
     return (
         <div className="animated fadeIn" style={{width:300,left:200}}>
             <div style={{width:800,left:200}}>
-              <Button onClick={this.onChange}> on click!!</Button>
+              <Button onClick={this.Calenderdpy}> on click!!</Button>
           </div>
         <Card>
           <CardHeader>
@@ -95,7 +97,9 @@ class Buttons extends Component {
         </CardBody>
         </Card>
         </div>
+
     );
+  }
   else{
     return(
       <div>
